@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jiahao-personal-website/static/css/main.b216471a.css",
-    "main.js": "/jiahao-personal-website/static/js/main.3cb1433c.js",
+    "main.css": "/jiahao-personal-website/static/css/main.3cf63cdc.css",
+    "main.js": "/jiahao-personal-website/static/js/main.9180ee05.js",
     "static/js/787.5809834d.chunk.js": "/jiahao-personal-website/static/js/787.5809834d.chunk.js",
     "static/media/headshot2.png": "/jiahao-personal-website/static/media/headshot2.94a073f848eb963a4f63.png",
     "static/media/headshot.jpg": "/jiahao-personal-website/static/media/headshot.cf1ed12ee1ee1c383795.jpg",
@@ -10,12 +10,12 @@
     "static/media/growthbox.png": "/jiahao-personal-website/static/media/growthbox.32e7658a2c4c558749e1.png",
     "static/media/tiktok.png": "/jiahao-personal-website/static/media/tiktok.3c5c0af50917ab18f8a4.png",
     "index.html": "/jiahao-personal-website/index.html",
-    "main.b216471a.css.map": "/jiahao-personal-website/static/css/main.b216471a.css.map",
-    "main.3cb1433c.js.map": "/jiahao-personal-website/static/js/main.3cb1433c.js.map",
+    "main.3cf63cdc.css.map": "/jiahao-personal-website/static/css/main.3cf63cdc.css.map",
+    "main.9180ee05.js.map": "/jiahao-personal-website/static/js/main.9180ee05.js.map",
     "787.5809834d.chunk.js.map": "/jiahao-personal-website/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b216471a.css",
-    "static/js/main.3cb1433c.js"
+    "static/css/main.3cf63cdc.css",
+    "static/js/main.9180ee05.js"
   ]
 }
