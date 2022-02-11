@@ -11,8 +11,8 @@ const Header = () => {
                     <div class="navbar-nav">
                         <a class="nav-link active px-3" aria-current="page" href="#about">Who I am</a>
                         <a class="nav-link px-3" href="#work">Experience</a>
-                        <a class="nav-link px-3" href="#cat">My Cat</a>
-                        <a class="nav-link px-3" href="#photography">Photography</a>
+                        <a class="nav-link px-3" href="#art">Art</a>
+                        <a className="nav-link px-3" href="#life">Life</a>
                         <a class="nav-link px-3" href="#contact">Contact</a>
                     </div>
                 </div>
