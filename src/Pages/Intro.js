@@ -23,7 +23,7 @@ const Intro = () => {
                     College</a> in California.</p>
                 <p class="fs-8 lh-lg">I'm from Deqing, China.</p>
               <p class="fs-8 lh-lg">While I major in Computer Science, I'm also very pasionate about social sciences. I study politics, international relations, anthropology, and sociology. I stayed in Uganga for a month studying international development and NGO influence with <a href="https://lauraseay.wordpress.com/curriculum-vitae/">Professor Seay</a>.</p>
-                <p class="fs-8 lh-lg">I love coffee & K-POP dance dance. I have a <a href="#life">cat called 小宝 (Xiaobao)</a>.</p>
+                <p class="fs-8 lh-lg">I love coffee & K-POP dance. I have a <a href="#life">cat called 小宝 (Xiaobao)</a>.</p>
 
             </div>
           </div>
