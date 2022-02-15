@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import meta from '../picture/meta.png';
 import colby2 from '../picture/colby2.png';
 import pomona from '../picture/pomona.jpg';
+import webDemo from '../picture/webDemo.gif'
 import pomona2 from '../picture/pomona2.png';
 import tiktok from '../picture/tiktok.png';
 import gb from '../picture/growthbox.png';
@@ -110,7 +111,7 @@ const Experience = () => {
                             <div class=" d-flex flex-wrap">
                                 <div class="sm-tag text-muted">React.JS</div>
                                 <div class="sm-tag text-muted">Firestore</div>
-                                <div class="sm-tag text-muted">Self-written CSS</div>
+                                <div class="sm-tag text-muted">Fully Self-written CSS</div>
                                 <div class="sm-tag text-muted">Accessibility</div>
                                 <div class="sm-tag text-muted">Log-In</div>
                                 <div class="sm-tag text-muted">Sharing</div>
@@ -120,28 +121,32 @@ const Experience = () => {
                         </Grow>
                     </div>
 
-                    {/* <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6">
+                        <Grow in={inViewport}
+                            style={{ transformOrigin: '0 0 0' }}
+                            {...(inViewport ? { timeout: 800 } : {})}
+                        >
                         <div class="row projectCard d-flex align-items-center">
-                        <div class="col-md-4">
-                            <img src={todoDemo} class="img-fluid rounded-start" alt="..."/>
+                        <div class="row">
+                           <img src={webDemo} class={"img-fluid rounded-start "} alt="..."/>
                         </div>
-                        <div class="col-md-8">
-                            <h4>Task Manager</h4>
-                            <p>An app designed with UI/UX principles in mind to support both basic and advanced to-do list functionalities such as
-                                sharing list of to-dos with friends.
+                        <div class="row">
+                        <h4 class={"mt-3"}>"Hi, I'm Jiahao"</h4>
+                            <p>My personal website
                             </p>
-                            <p><a href="https://yejiahaoderek.github.io/cs124/" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Try it out</a></p>
+                            <p><a href="jiahao-ye.com" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Check it out</a></p>
                             <div class=" d-flex flex-wrap">
                                 <div class="sm-tag text-muted">React.JS</div>
-                                <div class="sm-tag text-muted">Firestore</div>
-                                <div class="sm-tag text-muted">Self-written CSS</div>
-                                <div class="sm-tag text-muted">Accessibility</div>
-                                <div class="sm-tag text-muted">Log-In</div>
-                                <div class="sm-tag text-muted">Sharing</div>
+                                <div class="sm-tag text-muted">Fade In Animation</div>
+                                <div class="sm-tag text-muted">Responsive Design</div>
+                                <div class="sm-tag text-muted">Partially self-written CSS</div>
+                                <div class="sm-tag text-muted">Bootstrap</div>
+                                <div class="sm-tag text-muted">MaterialUI</div>
                             </div>
                         </div> 
                         </div>  
-                    </div> */}
+                        </Grow>
+                    </div>
                     
                 </div>
             </div>
