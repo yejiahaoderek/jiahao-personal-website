@@ -29,6 +29,10 @@ const Art = () => {
                title: 'Kitchen',
           },     
           {
+               img: 'https://live.staticflickr.com/65535/51882811726_d94014ae54_h.jpg',
+               title: 'Kitchen',
+          },
+          {
                img: 'https://live.staticflickr.com/65535/51872130997_7185e39a84_k.jpg',
                title: 'Kitchen',
           },
