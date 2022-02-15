@@ -11,6 +11,8 @@ import Grow from '@mui/material/Grow';
 import todoDemo from '../picture/todoDemo.gif'
 import { useInViewport } from 'react-in-viewport';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Button from '@mui/material/Button';
+
 
 
 
@@ -107,11 +109,12 @@ const Experience = () => {
                             <p>An app designed with UI/UX principles in mind to support both basic and advanced to-do list functionalities such as
                                 sharing list of to-dos with friends.
                             </p>
-                            <p><a href="https://yejiahaoderek.github.io/cs124/" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Try it out</a></p>
+                            <p><Button href="https://yejiahaoderek.github.io/cs124/" variant="outlined">Try it out</Button></p>
                             <div class=" d-flex flex-wrap">
                                 <div class="sm-tag text-muted">React.JS</div>
                                 <div class="sm-tag text-muted">Firestore</div>
                                 <div class="sm-tag text-muted">Fully Self-written CSS</div>
+                                <div class="sm-tag text-muted">Responsive Design</div>
                                 <div class="sm-tag text-muted">Accessibility</div>
                                 <div class="sm-tag text-muted">Log-In</div>
                                 <div class="sm-tag text-muted">Sharing</div>
@@ -134,7 +137,7 @@ const Experience = () => {
                         <h4 class={"mt-3"}>"Hi, I'm Jiahao"</h4>
                             <p>My personal website
                             </p>
-                            <p><a href="https://jiahao-ye.com" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Check it out</a></p>
+                            <p><Button href="https://jiahao-ye.com" variant="outlined">Check it out</Button></p>
                             <div class=" d-flex flex-wrap">
                                 <div class="sm-tag text-muted">React.JS</div>
                                 <div class="sm-tag text-muted">Fade In Animation</div>

@@ -4,6 +4,7 @@ import InstagramFeed from "react-ig-feed";
 import Grow from '@mui/material/Grow';
 import "react-ig-feed/dist/index.css";
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Button from '@mui/material/Button';
 
 
 const Life = () => {
@@ -28,14 +29,14 @@ const Life = () => {
             
               <h5 className="mb-3 mt-5">Dance</h5>
               <div class="col-md-4 col-12">
-              <div class="card">
-                    <div className='embed-container'>
+              <div class="videoCard">
+                    <div className='embed-container video'>
                         <iframe src='//player.bilibili.com/player.html?aid=290797100&bvid=BV1ef4y1h7ZA&cid=344903910&page=1' frameBorder='0' allowFullScreen></iframe>
                     </div>
                     <div class="card-body">
                     <p class="card-title fw-bold">火箭少女-月亮警察Cover</p>
                     <p class="card-text">This is a dance cover with the amazing friends I met during my gap semeseter in Beijing</p>
-                    <p class="card-text"><a href="https://www.bilibili.com/video/BV1ef4y1h7ZA?spm_id_from=333.999.0.0" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Watch on Bilibili</a></p>
+                    <p class="card-text"><Button href="https://www.bilibili.com/video/BV1ef4y1h7ZA?spm_id_from=333.999.0.0" variant="outlined" role="button">Watch on Bilibili</Button></p>
                     </div>
              </div>
              </div>

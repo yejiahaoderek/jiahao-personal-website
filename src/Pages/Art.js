@@ -4,6 +4,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import Grow from '@mui/material/Grow';
 import { useInViewport } from 'react-in-viewport';
 import React, { useRef } from 'react';
+import Button from '@mui/material/Button';
 
 
 const Art = () => {
@@ -98,53 +99,53 @@ const Art = () => {
                 <div class="row row-cols-1 row-cols-md-3">
       
                     <div class="col mb-3">  
-                    <div class="projectCard">
+                    <div class="videoCard">
                          <div className='embed-container video'>
                               <iframe src='https://www.youtube.com/embed//jhMj3hW7QEQ' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
                          <p class="card-title fw-bold">Project Video</p>
                          <p class="card-text">A documentary video for project "You Are Speaking My Language" at Colby Museum of Art</p>
-                         <p class="card-text"><a href="https://www.youtube.com/watch?v=jhMj3hW7QEQ" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Watch on YouTube</a></p>
+                         <p class="card-text"><Button href="https://www.youtube.com/watch?v=jhMj3hW7QEQ" variant="outlined" role="button" >Watch on YouTube</Button></p>
                          </div>
                     </div>
                     </div>
 
                     <div class="col mb-3">
-                    <div class="projectCard">
+                    <div class="videoCard">
                          <div className='embed-container video'>
                               <iframe src='https://www.youtube.com/embed/Rqixawr8KAA' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
                          <p class="card-title fw-bold">VLOG</p>
                          <p class="card-text">This a VLOG about one day of my life when college became online during the pandemic </p>
-                         <p class="card-text"><a href="https://www.youtube.com/watch?v=Rqixawr8KAA" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Watch on YouTube</a></p>
+                         <p class="card-text"><Button href="https://www.youtube.com/watch?v=Rqixawr8KAA" variant="outlined" role="button">Watch on YouTube</Button></p>
                          </div>
                     </div>
                     </div>
 
                     <div class="col mb-3">
-                    <div class="projectCard">
+                    <div class="videoCard">
                          <div className='embed-container video'>
                               <iframe src='//player.bilibili.com/player.html?aid=24703002&bvid=BV1wW411w7z8&cid=41524574&page=1' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
                          <p class="card-title fw-bold">High School Graduation Project Video</p>
                          <p class="card-text">This is the official video for the opening of my high school's graduation ceremony</p>
-                         <p class="card-text"><a href="https://www.bilibili.com/video/BV1wW411w7z8?spm_id_from=333.999.0.0" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Watch on Bilibili</a></p>
+                         <p class="card-text"><Button href="https://www.bilibili.com/video/BV1wW411w7z8?spm_id_from=333.999.0.0" variant="outlined" role="button">Watch on Bilibili</Button></p>
                          </div>
                     </div>
                     </div>
 
                     <div class="col mb-3">
-                    <div class="projectCard">
+                    <div class="videoCard">
                          <div className='embed-container video'>
                               <iframe src='https://www.youtube.com/embed/_2JlfyizEbU' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
                          <p class="card-title fw-bold">Sociology Project Video: Friend Group</p>
                          <p class="card-text">This is a project video for my Intro to Sociology class</p>
-                         <p class="card-text"><a href="https://www.youtube.com/embed/_2JlfyizEbU" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Watch on YouTube</a></p>
+                         <p class="card-text"><Button href="https://www.youtube.com/embed/_2JlfyizEbU" variant="outlined" role="button">Watch on YouTube</Button></p>
                          </div>
                     </div>
                     </div>

@@ -1,10 +1,5 @@
 
 
-.title {
-
-}
-
-
 /*:root {*/
 /*    --animate-duration: 800ms;*/
 /*    --animate-delay: 0.9s;*/
@@ -21,8 +16,8 @@
 }
 
 body {
-    /*background-color: #b8c6db;*/
-    /*background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);*/
+    /* background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
 }
 
 .logo {
@@ -106,7 +101,16 @@ img.headshot {
     align-content: center;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 22px;
+    border-radius: 10px;
+}
+
+.videoCard {
+    margin: 8px;
+    font-size: 14px;
+    justify-content: center;
+    align-content: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
 }
 
 .sm-tag {
@@ -118,7 +122,7 @@ img.headshot {
     padding-left: 8px;
     padding-right: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    border-radius: 22px;
+    border-radius: 22px;   
 }
 
 @media (max-width: 544px) {
@@ -143,8 +147,9 @@ img.headshot {
 
 
 .video {
-    border-radius: 2px;
+    border-radius: 10px 10px 0 0;
 }
+
 
 .role {
     margin: 8px;
@@ -161,7 +166,7 @@ img.headshot {
     border-radius: 20px;
     border-width: 0px;
     border-color: lightgray;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 28px;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 3px 28px; */
 }
 
 body {
