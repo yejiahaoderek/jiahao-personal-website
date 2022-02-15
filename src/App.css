@@ -49,12 +49,12 @@ img.headshot {
     background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
 }
 
-.grid {
+/* .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     align-items: center;
-}
+} */
 
 .photo {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -90,6 +90,36 @@ img.headshot {
     border-radius: 22px;
 }
 
+.footer {
+    font-family: 'Tajawal';
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+.projectCard {
+    margin: 8px;
+    font-size: 14px;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 22px;
+}
+
+.sm-tag {
+    margin: 4px;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 22px;
+}
 
 @media (max-width: 544px) {
     body {font-size:15px;}
@@ -103,12 +133,12 @@ img.headshot {
         padding-bottom: 4px;
     }
 
-    .grid {
+    /* .grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 20px;
         align-items: center;
-    }
+    } */
 }
 
 .role {

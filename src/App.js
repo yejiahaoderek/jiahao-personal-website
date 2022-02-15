@@ -5,42 +5,31 @@ import Experience from './Pages/Experience';
 import Art from './Pages/Art';
 import Life from './Pages/Life'
 import Contact from './Pages/Contact';
-
 import 'animate.css';
-import Swing from 'react-reveal/Swing';
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
 import React, { useState, useEffect, useRef } from 'react';
-import TrackVisibility from 'react-on-screen';
 
 
 function App() {
-    // let [active, setActive] = useState(false);
-    // const hiddenRef = useRef();
-    // useEffect(() => {
-    //     window.addEventListener('scroll', scrollHandler);
-    //     return () => window.removeEventListener('scroll', scrollHandler);
-    // }, []);
+    const [selectedKey, setSelectedKey] = useState(1);
 
-    // const scrollHandler = () => {
-    //     if(window.pageYOffset + window.innerHeight >= hiddenRef.current.offsetTop)
-    //         setActive(true)
-    // }
-
+    function handleSelect(selectedKey) {
+        setSelectedKey(selectedKey);
+    }
 
     return (
     <div class=".bg-light.bg-gradient">
-        <Header />
+        <Header onKey={handleSelect} selectedKey={selectedKey}/>
         <Intro />
-        <TrackVisibility once><Experience /></TrackVisibility>
-        <TrackVisibility once><Art /></TrackVisibility>
-        <TrackVisibility once><Life /></TrackVisibility>
-        <TrackVisibility once><Contact/></TrackVisibility>
+        <Experience />
+        <Art />
+        <Life />
+        <Contact/>
 
         <br></br>
         <br></br>
 
-        <div class="d-flex justify-content-center mb-4 mt-5">
+
+        <div class="d-flex justify-content-center mb-4 mt-5 footer">
             @Jiahao Ye 2022 :)
         </div>
     </div>

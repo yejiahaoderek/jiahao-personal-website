@@ -15,14 +15,15 @@ const Intro = () => {
                         <div class="tag animate__animated animate__fadeInUp animate__delay-1s">Developer</div>
                         <div class="tag animate__animated animate__fadeInUp animate__delay-1s">Coffee lover</div>
                         <div class="tag animate__animated animate__fadeInUp animate__delay-1s">Dancer</div>
+                        <div class="tag animate__animated animate__fadeInUp animate__delay-1s">Videographer</div>
                         <div class="tag animate__animated animate__fadeInUp animate__delay-1s">Cat lover</div>
                     </div>
             <div class="mt-4 animate__animated animate__fadeInUp animate__delay-2s">
                 <p class="fs-8 fs-sm-1 lh-lg">I'm currently a senior at <a className="link" href="https://www.pomona.edu">Pomona
                     College</a> in California.</p>
                 <p class="fs-8 lh-lg">I'm from Deqing, China.</p>
-              <p class="fs-8 lh-lg">I major in Computer Science. But I'm also very pasionate about social sciences. I study politics, international relations, anthropology, sociology, and had a field study in Uganda during my undergraduate studies.</p>
-                <p class="fs-8 lh-lg">I dance K-POP. I love coffee. And I have a cat called 小宝 (Xiaobao).</p>
+              <p class="fs-8 lh-lg">While I major in Computer Science, I'm also very pasionate about social sciences. I study politics, international relations, anthropology, and sociology. I stayed in Uganga for a month studying international development and NGO influence with <a href="https://lauraseay.wordpress.com/curriculum-vitae/">Professor Seay</a>.</p>
+                <p class="fs-8 lh-lg">I dance K-POP. I love coffee. I have a <a href="#life">cat called 小宝 (Xiaobao)</a>.</p>
 
             </div>
           </div>

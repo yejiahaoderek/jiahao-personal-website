@@ -1,30 +1,39 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import meta from '../picture/meta.png';
+import colby2 from '../picture/colby2.png';
+import pomona from '../picture/pomona.jpg';
+import pomona2 from '../picture/pomona2.png';
 import tiktok from '../picture/tiktok.png';
 import gb from '../picture/growthbox.png';
 import colby from '../picture/colby.png';
+import Grow from '@mui/material/Grow';
+import todoDemo from '../picture/todoDemo.gif'
+import { useInViewport } from 'react-in-viewport';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
-const Experience = ({isVisible}) => {
 
-    // let [active, setActive] = useState(false);
-    // const hiddenRef = useRef();
-    // useEffect(() => {
-    //     window.addEventListener('scroll', scrollHandler);
-    //     return () => window.removeEventListener('scroll', scrollHandler);
-    // }, []);
 
-    // const scrollHandler = () => {
-    //     if(window.pageYOffset + window.innerHeight >= hiddenRef.current.offsetTop)
-    //         setActive(true)
-    // }
+const Experience = () => {
+    const matches = useMediaQuery('(min-width:960px)');
+
+    const myRef = useRef();
+    const {
+        inViewport,
+        enterCount,
+        leaveCount,
+    } = useInViewport(myRef);
 
     return ( 
-        <section id="work" class=".bg-light.bg-gradient mt-md-4 mx-md-5 pt-md-4 px-md-4 pb-md-4">
+        <section id="work" ref={myRef} class=".bg-light.bg-gradient mt-md-4 mx-md-5 pt-md-4 px-md-4 pb-md-4">
         <div className={"mt-5 mx-5 "}>
             <h3 class="fw-bold mb-4">Experience</h3>
-                <div class="row">
-                <div class={"col-12 col-md-6 "}>
+            <div class="row">
+                <div class={"col-12 col-md-6"}>
                     <div class={"fst-italic mt-4 mb-3"}>Current</div>
+                    <Grow in={inViewport}
+                        style={{ transformOrigin: '0 0 0' }}
+                        {...(inViewport ? { timeout: 800 } : {})}
+                   >
                     <div class="container d-flex flex-wrap">
                         <div class="role px-3 d-flex align-items-center">
                               Incoming Software Engineer Intern @ Meta
@@ -42,35 +51,105 @@ const Experience = ({isVisible}) => {
                             @ Milk & Honey Student-run Boba Shop
                         </div>
                     </div>
+                    </Grow>
                 </div>
                 <div className="col-12 col-md-6">
                     <div class="fst-italic mt-4 mb-3">Past</div>
+                    <Grow in={inViewport}
+                        style={{ transformOrigin: '0 0 0' }}
+                        {...(inViewport ? { timeout: 1000 } : {})}
+                   >
                     <div class="container d-flex flex-wrap">
                         <div className="role px-3 d-flex align-items-center">
                             Product Strategy Intern @ TikTok
-                        </div>
+                        </div><div class="break"></div> 
                         <div className="role px-3 d-flex align-items-center">
                             Growth Hacker Intern @ GrowthBox
-                        </div>
+                        </div><div class="break"></div> 
 
                         <div className="role px-3 d-flex align-items-center">
                             Admissions Tour Guide @ Colby
-                        </div>
+                        </div><div class="break"></div> 
                         <div className="role px-3 d-flex align-items-center">
-                            Student Videographer <br/> @ Colby Museum of Art
+                            Student Videographer @ Colby Museum of Art
                         </div>
                     </div>
+                    </Grow>
                 </div>
-                </div>
-
-            <div class={"row mt-4 " + (isVisible ? 'animate__animated animate__fadeInUp' : 'invisible')}>
-                <div class="col-6 col-lg-3 d-flex flex-column"><img src={meta} class="logo align-self-center mt-4"/></div>
-                <div class="col-6 col-lg-3 d-flex flex-column"><img src={tiktok} class="logo align-self-center mt-4"/></div>
-                <div class="col-6 col-lg-3 d-flex flex-column"><img src={gb} class="logo align-self-center mt-4"/></div>
-                <div class="col-6 col-lg-3 d-flex flex-column"><img src={colby} class="logo align-self-center mt-4"/></div>
             </div>
-        </div>
+
+            <div class={"row mt-4 " + (inViewport ? 'animate__animated animate__fadeInUp' : 'invisible')}>
+                <div class="row">
+                <div class="col-6 col-md d-flex justify-content-center flex-column"><img src={meta} class="logo align-self-center mb-5 mt-4"/></div>
+                <div class="col-6 col-md d-flex justify-content-center flex-column"><img src={tiktok} class="logo align-self-center mb-5 mt-4"/></div>
+                <div class="col-6 col-md d-flex justify-content-center flex-column"><img src={pomona2} class="logo align-self-center mb-5 mt-4"/></div>
+                <div class="col-6 col-md d-flex justify-content-center flex-column"><img src={gb} class="logo align-self-center mb-5 mt-4"/></div>
+                <div class="col-6 col-md d-flex justify-content-center flex-column"><img src={colby} class="logo align-self-center mb-5 mt-4"/></div>
+                </div>
+            </div>
+
+            <div class="row">
+            <div class={"fst-italic mt-5 mb-4"}>Projects</div>
+            <div class="mb-3">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-6">
+                        <Grow in={inViewport}
+                            style={{ transformOrigin: '0 0 0' }}
+                            {...(inViewport ? { timeout: 800 } : {})}
+                        >
+                        <div class="row projectCard d-flex align-items-center">
+                        <div class="col-md-4">
+                           <img src={todoDemo} class={"img-fluid rounded-start "} alt="..."/>
+                        </div>
+                        <div class="col-md-8">
+                        <h4 class={!matches ? "mt-3" : ""}>Task Manager</h4>
+                            <p>An app designed with UI/UX principles in mind to support both basic and advanced to-do list functionalities such as
+                                sharing list of to-dos with friends.
+                            </p>
+                            <p><a href="https://yejiahaoderek.github.io/cs124/" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Try it out</a></p>
+                            <div class=" d-flex flex-wrap">
+                                <div class="sm-tag text-muted">React.JS</div>
+                                <div class="sm-tag text-muted">Firestore</div>
+                                <div class="sm-tag text-muted">Self-written CSS</div>
+                                <div class="sm-tag text-muted">Accessibility</div>
+                                <div class="sm-tag text-muted">Log-In</div>
+                                <div class="sm-tag text-muted">Sharing</div>
+                            </div>
+                        </div> 
+                        </div>  
+                        </Grow>
+                    </div>
+
+                    {/* <div class="col-12 col-md-6">
+                        <div class="row projectCard d-flex align-items-center">
+                        <div class="col-md-4">
+                            <img src={todoDemo} class="img-fluid rounded-start" alt="..."/>
+                        </div>
+                        <div class="col-md-8">
+                            <h4>Task Manager</h4>
+                            <p>An app designed with UI/UX principles in mind to support both basic and advanced to-do list functionalities such as
+                                sharing list of to-dos with friends.
+                            </p>
+                            <p><a href="https://yejiahaoderek.github.io/cs124/" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Try it out</a></p>
+                            <div class=" d-flex flex-wrap">
+                                <div class="sm-tag text-muted">React.JS</div>
+                                <div class="sm-tag text-muted">Firestore</div>
+                                <div class="sm-tag text-muted">Self-written CSS</div>
+                                <div class="sm-tag text-muted">Accessibility</div>
+                                <div class="sm-tag text-muted">Log-In</div>
+                                <div class="sm-tag text-muted">Sharing</div>
+                            </div>
+                        </div> 
+                        </div>  
+                    </div> */}
+                    
+                </div>
+            </div>
+            </div>
+            
+      </div>
       </section>
+      
     );
 }
  

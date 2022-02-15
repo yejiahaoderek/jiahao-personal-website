@@ -1,5 +1,5 @@
 
-const Header = () => {
+const Header = (props) => {
     return ( 
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -9,11 +9,36 @@ const Header = () => {
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active px-3" aria-current="page" href="#about">Who I am</a>
-                        <a class="nav-link px-3" href="#work">Experience</a>
-                        <a class="nav-link px-3" href="#art">Art</a>
-                        <a className="nav-link px-3" href="#life">Life</a>
-                        <a class="nav-link px-3" href="#contact">Contact</a>
+                        <a  className={"nav-link px-3 "+ (props.selectedKey === 1 ? "active" : "")} 
+                            href="#about"
+                            onClick={()=>props.onKey(1)}
+                        >
+                            Who I am
+                        </a>
+                        <a  className={"nav-link px-3 "+ (props.selectedKey === 2 ? "active" : "")} 
+                            href="#work"
+                            onClick={()=>props.onKey(2)}
+                        >                            
+                            Experience
+                        </a>
+                        <a  className={"nav-link px-3 "+ (props.selectedKey === 3 ? "active" : "")} 
+                            href="#art"
+                            onClick={()=>props.onKey(3)}
+                        >     
+                            Art
+                        </a>
+                        <a  className={"nav-link px-3 "+ (props.selectedKey === 4 ? "active" : "")} 
+                            href="#life"
+                            onClick={()=>props.onKey(4)}
+                        >                           
+                            Life
+                        </a>
+                        <a  className={"nav-link px-3 "+ (props.selectedKey === 5 ? "active" : "")} 
+                            href="#contact"
+                            onClick={()=>props.onKey(5)}
+                        >                                
+                            Contact
+                        </a>
                     </div>
                 </div>
             </div>
