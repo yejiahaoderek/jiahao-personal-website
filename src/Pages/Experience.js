@@ -134,7 +134,7 @@ const Experience = () => {
                         <h4 class={"mt-3"}>"Hi, I'm Jiahao"</h4>
                             <p>My personal website
                             </p>
-                            <p><a href="jiahao-ye.com" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Check it out</a></p>
+                            <p><a href="https://jiahao-ye.com" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Check it out</a></p>
                             <div class=" d-flex flex-wrap">
                                 <div class="sm-tag text-muted">React.JS</div>
                                 <div class="sm-tag text-muted">Fade In Animation</div>

@@ -141,6 +141,11 @@ img.headshot {
     } */
 }
 
+
+.video {
+    border-radius: 2px;
+}
+
 .role {
     margin: 8px;
     font-size: 14px;

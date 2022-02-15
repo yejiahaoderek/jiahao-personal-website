@@ -98,8 +98,8 @@ const Art = () => {
                 <div class="row row-cols-1 row-cols-md-3">
       
                     <div class="col mb-3">  
-                    <div class="card">
-                         <div className='embed-container'>
+                    <div class="projectCard">
+                         <div className='embed-container video'>
                               <iframe src='https://www.youtube.com/embed//jhMj3hW7QEQ' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
@@ -111,8 +111,8 @@ const Art = () => {
                     </div>
 
                     <div class="col mb-3">
-                    <div class="card">
-                         <div className='embed-container'>
+                    <div class="projectCard">
+                         <div className='embed-container video'>
                               <iframe src='https://www.youtube.com/embed/Rqixawr8KAA' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
@@ -124,8 +124,8 @@ const Art = () => {
                     </div>
 
                     <div class="col mb-3">
-                    <div class="card">
-                         <div className='embed-container'>
+                    <div class="projectCard">
+                         <div className='embed-container video'>
                               <iframe src='//player.bilibili.com/player.html?aid=24703002&bvid=BV1wW411w7z8&cid=41524574&page=1' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
@@ -137,8 +137,8 @@ const Art = () => {
                     </div>
 
                     <div class="col mb-3">
-                    <div class="card">
-                         <div className='embed-container'>
+                    <div class="projectCard">
+                         <div className='embed-container video'>
                               <iframe src='https://www.youtube.com/embed/_2JlfyizEbU' frameBorder='0' allowFullScreen></iframe>
                          </div>
                          <div class="card-body">
