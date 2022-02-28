@@ -70,7 +70,7 @@ const Art = () => {
 
     return ( 
         <section id="art" class=".bg-light.bg-gradient mt-md-4 mx-md-5 pt-md-4 px-md-4 pb-md-4">
-            <div class={"mt-5 mx-5"}>
+            <div className={"mt-5 narrow mx-5 "}>
                 <h3 class="fw-bold mb-5">Art</h3>
                 <h5 class="mb-3" >Photography</h5>
 

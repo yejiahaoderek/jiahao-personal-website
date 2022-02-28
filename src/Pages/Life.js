@@ -19,7 +19,7 @@ const Life = () => {
 
     return ( 
         <section id="life" ref={myRef} class=".bg-light.bg-gradient mt-md-4 mx-md-5 pt-md-4 px-md-4 pb-md-4">
-          <div className={"mt-5 mx-5 "}>
+            <div className={"mt-5 narrow mx-5 "}>
               <h3 class="fw-bold mb-5">Life</h3>
               <h5 className="mb-3" id="cat">My Cat</h5>
               <InstagramFeed

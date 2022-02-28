@@ -5,7 +5,7 @@ import Swing from 'react-reveal/Swing';
 const Intro = () => {
     return (
         <section id="about" class=".bg-light.bg-gradient mt-md-4 mx-md-5 pt-md-4 px-md-4 pb-md-4">
-            <div class="mt-5 mx-5">
+            <div className={"mt-5 narrow mx-5 "}>
                 <img src={headshot2} class="mb-4 headshot"/>
                 <div class="fs-3" ><span class="d-flex">Hi<Swing class="inline">👋</Swing></span>
                   <span class="fs-3 animate__animated animate__fadeInUp">My name is <span class="fw-bold emphasize fs-2">Jiahao Ye</span><span class="fst-italic fs-4"> he/him</span></span></div>
